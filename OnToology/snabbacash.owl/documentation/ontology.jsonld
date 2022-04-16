@@ -1,0 +1,884 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "0"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "0"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid41"
+    }, {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"
+    }, {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The \"snabbacash\" ontology has been created by Pablo Molina Cruz and represent the plot of the Snabba Cash serie."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activiy, clase que engloba aspectos relacionados con las actividades de la StartUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Alcohol"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Amphetamine, clase que engloba aspectos relaccionados con la droga amphetamine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Assasin, clase que engloba aspectos relacionados con el asesino"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "BusinessActivity, clase que engloba aspectos relacionados con la actividad de la compañías"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cocaine, clase que engloba aspectos relaccionados con la droga cocaina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La clase \"Company\" se utiliza para referenciar a muchos aspectos relacionados con las empresas que invierten en las Startups en el contexto de la serie \"Dinero Facil\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La clase \"CriminalBand\" se utiliza para referenciar a muchos aspectos relacionados con las bandas criminales que aparecen en la serie \"Dinero Facil\"."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Dani",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco"
+  } ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Drug, clase que engloba aspectos relacionados con la unidad de drogas de la policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DrugAddcit, clase que se refiere a aspectos o individuos relacionados con la adición a las drogas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DrugDealer, clase que recoge aspectos o individuos relacionados con el que trafica con drogas (el camello)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "DrugTrafficking, clase que engloba aspectos relacionados con el narcotráfico"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La clase \"Drugs\" se utiliza para referenciar a muchos aspectos relacionados con las drogas en el contexto de la serie \"Dinero Facil\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Drug"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "EconomicCrimes, clase que engloba aspectos relacionados con la unidad de delitos económicos de la policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Employees, clase que engloba aspectos relacionados con los empleados de la compañía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investigation, clase que engloba aspectos relacionados con la investigación de un asesinato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Investors, clase que engloba aspectos relacionados con los inversores de la StartUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Marijuana, clase que engloba aspectos relaccionados con la droga marihuana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La clase \"Members\" se utiliza para referenciar a muchos aspectos relacionados con los miembros de las bandas criminales que aparecen en la serie \"Dinero Facil\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "La clase \"Murder\" se utiliza para referenciar a muchos aspectos relacionados con los asesinatos en el contexto de la serie \"Dinero Facil\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Murder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Murdered, clase que engloba aspectos relacionados con el asesinado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Murders, clase que engloba aspectos relacionados con la unidad de asesinatos de la policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Other, clase que engloba otros tipos de unidades de policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "OtherDrugs, clase que engloba aspectos relacionados con otros tipos de drogas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Police, clase que engloba diversos aspectos de la Policía"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "President, clase que engloba aspectos relacionados con el presidente de la compañía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Ravy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1"
+  } ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim"
+  } ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reason, clase que engloba aspectos relacionados con la razón del asesinato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2"
+  } ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "StartUp, clase que engloba aspetos relacionados con las StartUps"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "0"
+  } ],
+  "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de anfetamina numero1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de anfetamina numero2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de cocaina numero1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de cocaina numero2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de marijuana numero1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipo de marijuana numero2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tabaco"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tomas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unit, clase que engloba diversos aspectos de las unidades de policía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42DrugCrimes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unidad42 de la policia que se dedica a asuntos de drogas"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42EconomicCrimes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unidad42 de la policia que se dedica a asuntos de delitos economicos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42MurderCrimes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unidad42 de la policia que se dedica a asuntos de asesinatos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42SexistCrimes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unidad42 de la policia que se dedica a delitos sexuales"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Viktoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity"
+  }, {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que una determinada persona tiene adicción por un determinado tipo de droga. Por lo tanto, el dominio será DrugAddict y el rango será Drugs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que se tienen ciertos indicios de algo aplicándolo en este sentido a que la policía tiene indicios de algún delito. Por tanto, el dominio será Police y el rango será Reason."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica el número de antecedentes penales que tiene una determina persona. Aplicado a nuestro contexto su dominio será Assasin y su rango será del tipo int."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que un determinado narcotraficante tiene determinadas drogas para narcotraficar con ellas. Por lo tanto, el dominio será DrugDealer y el rango será Drugs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica el número de inversores que han invertido en una Start-Up determinada. El dominio será Investors y el rango será int."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que se tienen inversores los cuales han invertido su dinero e ilusiones en una Start-Up. Por lo tanto, el dominio será Start-Up y el rango será Company."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica el número de miembros de la que se compone una determinada banda criminal. Por lo tanto, el dominio será Members y el rango será del tipo int."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica cantidad de dinero en unidades monetarias “X”. El dominio será, en nuestro caso, DrugAddict, DrugDealer, Company y StartUp, y el rango será integer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que se dispone del dinero suficiente para comprar drogas ya sea para consumo o para narcotráfico. Por lo tanto, aplicado a nuestro contexto, el dominio será DrugTrafficking y el rango será Drugs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que una determinada compañía dispone de dinero para invertir en una StartUp. Por lo tanto, el dominio será Company y el rango será Start-Up."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que una determinada persona ha asesinado a otra determinada persona. Por lo tanto, el domino será Assasin y el rango será Murdered."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta propiedad nos indica que se tienen razones para asesinar a alguien (ojo, que no soy yo quien lo dice, es la serie, claro está que no hay ninguna razón suficiente como para matar a alguien). Por tanto, el dominio será Assasin y el rango será Reason."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica el número de víctimas mortales que ha provocado un asesino. El dominio será Assasin y el rango será int."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
