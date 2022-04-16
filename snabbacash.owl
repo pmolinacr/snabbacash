@@ -1,943 +1,1013 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash">
-        <rdfs:comment>The &quot;snabbacash&quot; ontology has been created by Pablo Molina Cruz and represent the plot of the Snabba Cash serie.</rdfs:comment>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Esta propiedad nos indica que una determinada persona tiene adicción por un determinado tipo de droga. Por lo tanto, el dominio será DrugAddict y el rango será Drugs.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
-        <rdfs:comment>Esta propiedad nos indica que se tienen ciertos indicios de algo aplicándolo en este sentido a que la policía tiene indicios de algún delito. Por tanto, el dominio será Police y el rango será Reason.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Esta propiedad nos indica que un determinado narcotraficante tiene determinadas drogas para narcotraficar con ellas. Por lo tanto, el dominio será DrugDealer y el rango será Drugs.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
-        <rdfs:comment>Esta propiedad nos indica que se tienen inversores los cuales han invertido su dinero e ilusiones en una Start-Up. Por lo tanto, el dominio será Start-Up y el rango será Company.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Esta propiedad nos indica que se dispone del dinero suficiente para comprar drogas ya sea para consumo o para narcotráfico. Por lo tanto, aplicado a nuestro contexto, el dominio será DrugTrafficking y el rango será Drugs.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
-        <rdfs:comment>Esta propiedad nos indica que una determinada compañía dispone de dinero para invertir en una StartUp. Por lo tanto, el dominio será Company y el rango será Start-Up.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered"/>
-        <rdfs:comment>Esta propiedad nos indica que una determinada persona ha asesinado a otra determinada persona. Por lo tanto, el domino será Assasin y el rango será Murdered.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
-        <rdfs:comment>Esta propiedad nos indica que se tienen razones para asesinar a alguien (ojo, que no soy yo quien lo dice, es la serie, claro está que no hay ninguna razón suficiente como para matar a alguien). Por tanto, el dominio será Assasin y el rango será Reason.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Indica el número de antecedentes penales que tiene una determina persona. Aplicado a nuestro contexto su dominio será Assasin y su rango será del tipo int.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Indica el número de inversores que han invertido en una Start-Up determinada. El dominio será Investors y el rango será int.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Indica el número de miembros de la que se compone una determinada banda criminal. Por lo tanto, el dominio será Members y el rango será del tipo int.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:comment>Indica cantidad de dinero en unidades monetarias “X”. El dominio será, en nuestro caso, DrugAddict, DrugDealer, Company y StartUp, y el rango será integer.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Indica el número de víctimas mortales que ha provocado un asesino. El dominio será Assasin y el rango será int.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
-        <rdfs:comment>Activiy, clase que engloba aspectos relacionados con las actividades de la StartUp</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Amphetamine, clase que engloba aspectos relaccionados con la droga amphetamine</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
-        <rdfs:comment>Assasin, clase que engloba aspectos relacionados con el asesino</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
-        <rdfs:comment>BusinessActivity, clase que engloba aspectos relacionados con la actividad de la compañías</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Cocaine, clase que engloba aspectos relaccionados con la droga cocaina</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company">
-        <rdfs:comment>La clase &quot;Company&quot; se utiliza para referenciar a muchos aspectos relacionados con las empresas que invierten en las Startups en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
-        <rdfs:sameAs>https://dbpedia.org/page/Company</rdfs:sameAs>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand">
-        <rdfs:comment>La clase &quot;CriminalBand&quot; se utiliza para referenciar a muchos aspectos relacionados con las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
-        <rdfs:comment>Drug, clase que engloba aspectos relacionados con la unidad de drogas de la policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
-        <rdfs:comment>DrugAddcit, clase que se refiere a aspectos o individuos relacionados con la adición a las drogas</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
-        <rdfs:comment>DrugDealer, clase que recoge aspectos o individuos relacionados con el que trafica con drogas (el camello)</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking">
-        <rdfs:comment>DrugTrafficking, clase que engloba aspectos relacionados con el narcotráfico</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs">
-        <rdfs:comment>La clase &quot;Drugs&quot; se utiliza para referenciar a muchos aspectos relacionados con las drogas en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
-        <rdfs:sameAs>https://dbpedia.org/page/Drug</rdfs:sameAs>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
-        <rdfs:comment>EconomicCrimes, clase que engloba aspectos relacionados con la unidad de delitos económicos de la policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
-        <rdfs:comment>Employees, clase que engloba aspectos relacionados con los empleados de la compañía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
-        <rdfs:comment>Investigation, clase que engloba aspectos relacionados con la investigación de un asesinato</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
-        <rdfs:comment>Investors, clase que engloba aspectos relacionados con los inversores de la StartUp</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>Marijuana, clase que engloba aspectos relaccionados con la droga marihuana</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand"/>
-        <rdfs:comment>La clase &quot;Members&quot; se utiliza para referenciar a muchos aspectos relacionados con los miembros de las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder">
-        <rdfs:comment>La clase &quot;Murder&quot; se utiliza para referenciar a muchos aspectos relacionados con los asesinatos en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
-        <rdfs:sameAs>https://dbpedia.org/page/Murder</rdfs:sameAs>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
-        <rdfs:comment>Murdered, clase que engloba aspectos relacionados con el asesinado</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
-        <rdfs:comment>Murders, clase que engloba aspectos relacionados con la unidad de asesinatos de la policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
-        <rdfs:comment>Other, clase que engloba otros tipos de unidades de policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
-        <rdfs:comment>OtherDrugs, clase que engloba aspectos relacionados con otros tipos de drogas</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police">
-        <rdfs:comment>Police, clase que engloba diversos aspectos de la Policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
-        <rdfs:comment>President, clase que engloba aspectos relacionados con el presidente de la compañía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
-        <rdfs:comment>Reason, clase que engloba aspectos relacionados con la razón del asesinato</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp">
-        <rdfs:comment>StartUp, clase que engloba aspetos relacionados con las StartUps</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
-        <rdfs:comment>Unit, clase que engloba diversos aspectos de las unidades de policía</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
-        <rdfs:comment>Alcohol</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Dani -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Dani">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco"/>
-        <hasMoneyToDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
-        <hasInvestors rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
-        <hasMoneyToStartUp rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
-        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
-        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy"/>
-        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Ravy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Ravy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"/>
-        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1"/>
-        <hasMurdered rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim"/>
-        <hasVictims rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVictims>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-        <hasAddiction rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2"/>
-        <hasVictims rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasVictims>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tim -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tim">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"/>
-        <hasCriminalRecords rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasCriminalRecords>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
-        <rdfs:comment>Tipo de anfetamina numero1</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
-        <rdfs:comment>Tipo de anfetamina numero2</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
-        <rdfs:comment>Tipo de cocaina numero1</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
-        <rdfs:comment>Tipo de cocaina numero2</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
-        <rdfs:comment>Tipo de marijuana numero1</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
-        <rdfs:comment>Tipo de marijuana numero2</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
-        <rdfs:comment>Tabaco</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tomas -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tomas">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42DrugCrimes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42DrugCrimes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"/>
-        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de drogas</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42EconomicCrimes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42EconomicCrimes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"/>
-        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de delitos economicos</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42MurderCrimes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42MurderCrimes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"/>
-        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de asesinatos</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42SexistCrimes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42SexistCrimes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"/>
-        <rdfs:comment>Unidad42 de la policia que se dedica a delitos sexuales</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Viktoria -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Viktoria">
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"/>
-        </owl:members>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="urn:swrl:var#p">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#h">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-</rdf:RDF>
+     ontologyIRI="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash">
+    <Prefix name="" IRI="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The &quot;snabbacash&quot; ontology has been created by Pablo Molina Cruz and represent the plot of the Snabba Cash serie.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amphetamine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assassin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cocaine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalBand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugAddict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugDealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugTrafficking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EconomicCrimes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marijuana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Members"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Murder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Murdered"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Murders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherDrugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddiction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDrugs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInvestors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMoneyToDrugs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMoneyToStartUp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMurdered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReasons"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCriminalRecords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInversors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMembers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMoney"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVictims"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alcohol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dani"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Debth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Envy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marcus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Police1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Police2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ravy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reckoning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoAmphetamine1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoAmphetamine2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoCocaine1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoCocaine2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoMarijuana1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipoMarijuana2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tobacco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit42DrugCrimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit42EconomicCrimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit42MurderCrimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit42SexistCrimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viktoria"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#StartUp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amphetamine"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assassin"/>
+        <Class IRI="#Murder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessActivity"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cocaine"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drug"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrugAddict"/>
+        <Class IRI="#DrugTrafficking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrugDealer"/>
+        <Class IRI="#DrugTrafficking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicCrimes"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employees"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investigation"/>
+        <Class IRI="#Murder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Investors"/>
+        <Class IRI="#StartUp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marijuana"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Members"/>
+        <Class IRI="#CriminalBand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murdered"/>
+        <Class IRI="#Murder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murders"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherDrugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#President"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reason"/>
+        <Class IRI="#Murder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#Police"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Amphetamine"/>
+        <Class IRI="#Cocaine"/>
+        <Class IRI="#Marijuana"/>
+        <Class IRI="#OtherDrugs"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Drug"/>
+        <Class IRI="#EconomicCrimes"/>
+        <Class IRI="#Murders"/>
+        <Class IRI="#Other"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#OtherDrugs"/>
+        <NamedIndividual IRI="#Alcohol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugDealer"/>
+        <NamedIndividual IRI="#Dani"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Members"/>
+        <NamedIndividual IRI="#Dani"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reason"/>
+        <NamedIndividual IRI="#Debth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reason"/>
+        <NamedIndividual IRI="#Envy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StartUp"/>
+        <NamedIndividual IRI="#Leya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Investors"/>
+        <NamedIndividual IRI="#Marcus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#President"/>
+        <NamedIndividual IRI="#Marcus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police"/>
+        <NamedIndividual IRI="#Police1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Police"/>
+        <NamedIndividual IRI="#Police2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assassin"/>
+        <NamedIndividual IRI="#Ravy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugDealer"/>
+        <NamedIndividual IRI="#Ravy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Members"/>
+        <NamedIndividual IRI="#Ravy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reason"/>
+        <NamedIndividual IRI="#Reckoning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assassin"/>
+        <NamedIndividual IRI="#Salim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugAddict"/>
+        <NamedIndividual IRI="#Salim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugDealer"/>
+        <NamedIndividual IRI="#Salim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Members"/>
+        <NamedIndividual IRI="#Salim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugDealer"/>
+        <NamedIndividual IRI="#Tim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Members"/>
+        <NamedIndividual IRI="#Tim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Amphetamine"/>
+        <NamedIndividual IRI="#TipoAmphetamine1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Amphetamine"/>
+        <NamedIndividual IRI="#TipoAmphetamine2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cocaine"/>
+        <NamedIndividual IRI="#TipoCocaine1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cocaine"/>
+        <NamedIndividual IRI="#TipoCocaine2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Marijuana"/>
+        <NamedIndividual IRI="#TipoMarijuana1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Marijuana"/>
+        <NamedIndividual IRI="#TipoMarijuana2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OtherDrugs"/>
+        <NamedIndividual IRI="#Tobacco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Investors"/>
+        <NamedIndividual IRI="#Tomas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#President"/>
+        <NamedIndividual IRI="#Tomas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Unit42DrugCrimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EconomicCrimes"/>
+        <NamedIndividual IRI="#Unit42EconomicCrimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Murders"/>
+        <NamedIndividual IRI="#Unit42MurderCrimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Other"/>
+        <NamedIndividual IRI="#Unit42SexistCrimes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#Viktoria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employees"/>
+        <NamedIndividual IRI="#Viktoria"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Dani"/>
+        <NamedIndividual IRI="#Alcohol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Dani"/>
+        <NamedIndividual IRI="#TipoAmphetamine1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Dani"/>
+        <NamedIndividual IRI="#TipoCocaine1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Dani"/>
+        <NamedIndividual IRI="#Tobacco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMoneyToDrugs"/>
+        <NamedIndividual IRI="#Dani"/>
+        <NamedIndividual IRI="#TipoCocaine2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInvestors"/>
+        <NamedIndividual IRI="#Leya"/>
+        <NamedIndividual IRI="#Marcus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMoneyToStartUp"/>
+        <NamedIndividual IRI="#Marcus"/>
+        <NamedIndividual IRI="#Leya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReasons"/>
+        <NamedIndividual IRI="#Police1"/>
+        <NamedIndividual IRI="#Debth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReasons"/>
+        <NamedIndividual IRI="#Police2"/>
+        <NamedIndividual IRI="#Envy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReasons"/>
+        <NamedIndividual IRI="#Police2"/>
+        <NamedIndividual IRI="#Reckoning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Ravy"/>
+        <NamedIndividual IRI="#TipoCocaine1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <NamedIndividual IRI="#Ravy"/>
+        <NamedIndividual IRI="#TipoMarijuana1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMurdered"/>
+        <NamedIndividual IRI="#Ravy"/>
+        <NamedIndividual IRI="#Salim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAddiction"/>
+        <NamedIndividual IRI="#Salim"/>
+        <NamedIndividual IRI="#TipoMarijuana2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReasons"/>
+        <NamedIndividual IRI="#Tim"/>
+        <NamedIndividual IRI="#Debth"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVictims"/>
+        <NamedIndividual IRI="#Ravy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVictims"/>
+        <NamedIndividual IRI="#Salim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCriminalRecords"/>
+        <NamedIndividual IRI="#Tim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMurdered"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAddiction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasReasons"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddiction"/>
+        <Class IRI="#DrugAddict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClues"/>
+        <Class IRI="#Police"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <Class IRI="#DrugDealer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvestors"/>
+        <Class IRI="#StartUp"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMoneyToDrugs"/>
+        <Class IRI="#DrugTrafficking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMoneyToStartUp"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMurdered"/>
+        <Class IRI="#Assassin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReasons"/>
+        <Class IRI="#Assassin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddiction"/>
+        <Class IRI="#Drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClues"/>
+        <Class IRI="#Reason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDrugs"/>
+        <Class IRI="#Drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInvestors"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMoneyToDrugs"/>
+        <Class IRI="#Drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMoneyToStartUp"/>
+        <Class IRI="#StartUp"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMurdered"/>
+        <Class IRI="#Murdered"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReasons"/>
+        <Class IRI="#Reason"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCriminalRecords"/>
+        <Class IRI="#Assassin"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInversors"/>
+        <Class IRI="#Investors"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMembers"/>
+        <Class IRI="#Members"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMoney"/>
+        <Class IRI="#DrugAddict"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVictims"/>
+        <Class IRI="#Assassin"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCriminalRecords"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInversors"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMembers"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMoney"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVictims"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Members"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCriminalRecords"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Investigation"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Members"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVictims"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Assassin"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#President"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasMoney"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Investors"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal>Activiy, clase que engloba aspectos relacionados con las actividades de la StartUp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alcohol</IRI>
+        <Literal>Alcohol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Amphetamine</IRI>
+        <Literal>Amphetamine, clase que engloba aspectos relaccionados con la droga amphetamine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Assassin</IRI>
+        <Literal>Assasin, clase que engloba aspectos relacionados con el asesino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessActivity</IRI>
+        <Literal>BusinessActivity, clase que engloba aspectos relacionados con la actividad de la compañías</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cocaine</IRI>
+        <Literal>Cocaine, clase que engloba aspectos relaccionados con la droga cocaina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Company</IRI>
+        <Literal>La clase &quot;Company&quot; se utiliza para referenciar a muchos aspectos relacionados con las empresas que invierten en las Startups en el contexto de la serie &quot;Dinero Facil&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Company</IRI>
+        <Literal>https://dbpedia.org/page/Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CriminalBand</IRI>
+        <Literal>La clase &quot;CriminalBand&quot; se utiliza para referenciar a muchos aspectos relacionados con las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drug</IRI>
+        <Literal>Drug, clase que engloba aspectos relacionados con la unidad de drogas de la policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DrugAddict</IRI>
+        <Literal>DrugAddcit, clase que se refiere a aspectos o individuos relacionados con la adición a las drogas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DrugDealer</IRI>
+        <Literal>DrugDealer, clase que recoge aspectos o individuos relacionados con el que trafica con drogas (el camello)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DrugTrafficking</IRI>
+        <Literal>DrugTrafficking, clase que engloba aspectos relacionados con el narcotráfico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drugs</IRI>
+        <Literal>La clase &quot;Drugs&quot; se utiliza para referenciar a muchos aspectos relacionados con las drogas en el contexto de la serie &quot;Dinero Facil&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Drugs</IRI>
+        <Literal>https://dbpedia.org/page/Drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EconomicCrimes</IRI>
+        <Literal>EconomicCrimes, clase que engloba aspectos relacionados con la unidad de delitos económicos de la policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Employees</IRI>
+        <Literal>Employees, clase que engloba aspectos relacionados con los empleados de la compañía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investigation</IRI>
+        <Literal>Investigation, clase que engloba aspectos relacionados con la investigación de un asesinato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investors</IRI>
+        <Literal>Investors, clase que engloba aspectos relacionados con los inversores de la StartUp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Marijuana</IRI>
+        <Literal>Marijuana, clase que engloba aspectos relaccionados con la droga marihuana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Members</IRI>
+        <Literal>La clase &quot;Members&quot; se utiliza para referenciar a muchos aspectos relacionados con los miembros de las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Murder</IRI>
+        <Literal>La clase &quot;Murder&quot; se utiliza para referenciar a muchos aspectos relacionados con los asesinatos en el contexto de la serie &quot;Dinero Facil&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Murder</IRI>
+        <Literal>https://dbpedia.org/page/Murder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Murdered</IRI>
+        <Literal>Murdered, clase que engloba aspectos relacionados con el asesinado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Murders</IRI>
+        <Literal>Murders, clase que engloba aspectos relacionados con la unidad de asesinatos de la policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Other</IRI>
+        <Literal>Other, clase que engloba otros tipos de unidades de policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OtherDrugs</IRI>
+        <Literal>OtherDrugs, clase que engloba aspectos relacionados con otros tipos de drogas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Police</IRI>
+        <Literal>Police, clase que engloba diversos aspectos de la Policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#President</IRI>
+        <Literal>President, clase que engloba aspectos relacionados con el presidente de la compañía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reason</IRI>
+        <Literal>Reason, clase que engloba aspectos relacionados con la razón del asesinato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StartUp</IRI>
+        <Literal>StartUp, clase que engloba aspetos relacionados con las StartUps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoAmphetamine1</IRI>
+        <Literal>Tipo de anfetamina numero1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoAmphetamine2</IRI>
+        <Literal>Tipo de anfetamina numero2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoCocaine1</IRI>
+        <Literal>Tipo de cocaina numero1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoCocaine2</IRI>
+        <Literal>Tipo de cocaina numero2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoMarijuana1</IRI>
+        <Literal>Tipo de marijuana numero1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TipoMarijuana2</IRI>
+        <Literal>Tipo de marijuana numero2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tobacco</IRI>
+        <Literal>Tabaco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit</IRI>
+        <Literal>Unit, clase que engloba diversos aspectos de las unidades de policía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit42DrugCrimes</IRI>
+        <Literal>Unidad42 de la policia que se dedica a asuntos de drogas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit42EconomicCrimes</IRI>
+        <Literal>Unidad42 de la policia que se dedica a asuntos de delitos economicos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit42MurderCrimes</IRI>
+        <Literal>Unidad42 de la policia que se dedica a asuntos de asesinatos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit42SexistCrimes</IRI>
+        <Literal>Unidad42 de la policia que se dedica a delitos sexuales</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAddiction</IRI>
+        <Literal>Esta propiedad nos indica que una determinada persona tiene adicción por un determinado tipo de droga. Por lo tanto, el dominio será DrugAddict y el rango será Drugs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasClues</IRI>
+        <Literal>Esta propiedad nos indica que se tienen ciertos indicios de algo aplicándolo en este sentido a que la policía tiene indicios de algún delito. Por tanto, el dominio será Police y el rango será Reason.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCriminalRecords</IRI>
+        <Literal>Indica el número de antecedentes penales que tiene una determina persona. Aplicado a nuestro contexto su dominio será Assasin y su rango será del tipo int.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDrugs</IRI>
+        <Literal>Esta propiedad nos indica que un determinado narcotraficante tiene determinadas drogas para narcotraficar con ellas. Por lo tanto, el dominio será DrugDealer y el rango será Drugs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInversors</IRI>
+        <Literal>Indica el número de inversores que han invertido en una Start-Up determinada. El dominio será Investors y el rango será int.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInvestors</IRI>
+        <Literal>Esta propiedad nos indica que se tienen inversores los cuales han invertido su dinero e ilusiones en una Start-Up. Por lo tanto, el dominio será Start-Up y el rango será Company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMembers</IRI>
+        <Literal>Indica el número de miembros de la que se compone una determinada banda criminal. Por lo tanto, el dominio será Members y el rango será del tipo int.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMoney</IRI>
+        <Literal>Indica cantidad de dinero en unidades monetarias “X”. El dominio será, en nuestro caso, DrugAddict, DrugDealer, Company y StartUp, y el rango será integer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMoneyToDrugs</IRI>
+        <Literal>Esta propiedad nos indica que se dispone del dinero suficiente para comprar drogas ya sea para consumo o para narcotráfico. Por lo tanto, aplicado a nuestro contexto, el dominio será DrugTrafficking y el rango será Drugs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMoneyToStartUp</IRI>
+        <Literal>Esta propiedad nos indica que una determinada compañía dispone de dinero para invertir en una StartUp. Por lo tanto, el dominio será Company y el rango será Start-Up.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMurdered</IRI>
+        <Literal>Esta propiedad nos indica que una determinada persona ha asesinado a otra determinada persona. Por lo tanto, el domino será Assasin y el rango será Murdered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReasons</IRI>
+        <Literal>Esta propiedad nos indica que se tienen razones para asesinar a alguien (ojo, que no soy yo quien lo dice, es la serie, claro está que no hay ninguna razón suficiente como para matar a alguien). Por tanto, el dominio será Assasin y el rango será Reason.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVictims</IRI>
+        <Literal>Indica el número de víctimas mortales que ha provocado un asesino. El dominio será Assasin y el rango será int.</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
