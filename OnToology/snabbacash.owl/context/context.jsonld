@@ -1,0 +1,146 @@
+{
+  "@context" : {
+    "Unit" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"
+    },
+    "BusinessActivity" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity"
+    },
+    "Murders" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"
+    },
+    "Marijuana" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"
+    },
+    "Police" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"
+    },
+    "DrugDealer" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"
+    },
+    "hasCriminalRecords" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "DrugAddict" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"
+    },
+    "StartUp" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"
+    },
+    "EconomicCrimes" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"
+    },
+    "hasReasons" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons",
+      "@type" : "@id"
+    },
+    "Cocaine" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"
+    },
+    "hasVictims" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Activity" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity"
+    },
+    "Members" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"
+    },
+    "Assassin" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"
+    },
+    "Drugs" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"
+    },
+    "Drug" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"
+    },
+    "Murder" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"
+    },
+    "hasInversors" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "President" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"
+    },
+    "Company" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"
+    },
+    "Murdered" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered"
+    },
+    "hasClues" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues",
+      "@type" : "@id"
+    },
+    "Investors" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"
+    },
+    "hasMoney" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMoneyToDrugs" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs",
+      "@type" : "@id"
+    },
+    "CriminalBand" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand"
+    },
+    "Amphetamine" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"
+    },
+    "Employees" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees"
+    },
+    "DrugTrafficking" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"
+    },
+    "Investigation" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation"
+    },
+    "OtherDrugs" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"
+    },
+    "Reason" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"
+    },
+    "hasInvestors" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Other" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"
+    },
+    "hasDrugs" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs",
+      "@type" : "@id"
+    },
+    "hasAddiction" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction",
+      "@type" : "@id"
+    },
+    "hasMurdered" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered",
+      "@type" : "@id"
+    },
+    "hasMoneyToStartUp" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp",
+      "@type" : "@id"
+    },
+    "hasMembers" : {
+      "@id" : "http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    }
+  }
+}
