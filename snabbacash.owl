@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#"
+     xml:base="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash">
+        <rdfs:comment>The &quot;snabbacash&quot; ontology has been created by Pablo Molina Cruz and represent the plot of the Snabba Cash serie.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasAddiction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Esta propiedad nos indica que una determinada persona tiene adicción por un determinado tipo de droga. Por lo tanto, el dominio será DrugAddict y el rango será Drugs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasClues">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
+        <rdfs:comment>Esta propiedad nos indica que se tienen ciertos indicios de algo aplicándolo en este sentido a que la policía tiene indicios de algún delito. Por tanto, el dominio será Police y el rango será Reason.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasDrugs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Esta propiedad nos indica que un determinado narcotraficante tiene determinadas drogas para narcotraficar con ellas. Por lo tanto, el dominio será DrugDealer y el rango será Drugs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInvestors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
+        <rdfs:comment>Esta propiedad nos indica que se tienen inversores los cuales han invertido su dinero e ilusiones en una Start-Up. Por lo tanto, el dominio será Start-Up y el rango será Company.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToDrugs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Esta propiedad nos indica que se dispone del dinero suficiente para comprar drogas ya sea para consumo o para narcotráfico. Por lo tanto, aplicado a nuestro contexto, el dominio será DrugTrafficking y el rango será Drugs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoneyToStartUp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
+        <rdfs:comment>Esta propiedad nos indica que una determinada compañía dispone de dinero para invertir en una StartUp. Por lo tanto, el dominio será Company y el rango será Start-Up.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMurdered">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered"/>
+        <rdfs:comment>Esta propiedad nos indica que una determinada persona ha asesinado a otra determinada persona. Por lo tanto, el domino será Assasin y el rango será Murdered.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasReasons">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
+        <rdfs:comment>Esta propiedad nos indica que se tienen razones para asesinar a alguien (ojo, que no soy yo quien lo dice, es la serie, claro está que no hay ninguna razón suficiente como para matar a alguien). Por tanto, el dominio será Assasin y el rango será Reason.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de antecedentes penales que tiene una determina persona. Aplicado a nuestro contexto su dominio será Assasin y su rango será del tipo int.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasInversors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de inversores que han invertido en una Start-Up determinada. El dominio será Investors y el rango será int.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMembers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de miembros de la que se compone una determinada banda criminal. Por lo tanto, el dominio será Members y el rango será del tipo int.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Indica cantidad de dinero en unidades monetarias “X”. El dominio será, en nuestro caso, DrugAddict, DrugDealer, Company y StartUp, y el rango será integer.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de víctimas mortales que ha provocado un asesino. El dominio será Assasin y el rango será int.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
+        <rdfs:comment>Activiy, clase que engloba aspectos relacionados con las actividades de la StartUp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Amphetamine, clase que engloba aspectos relaccionados con la droga amphetamine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
+        <rdfs:comment>Assasin, clase que engloba aspectos relacionados con el asesino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#BusinessActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
+        <rdfs:comment>BusinessActivity, clase que engloba aspectos relacionados con la actividad de la compañías</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Cocaine, clase que engloba aspectos relaccionados con la droga cocaina</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company">
+        <rdfs:comment>La clase &quot;Company&quot; se utiliza para referenciar a muchos aspectos relacionados con las empresas que invierten en las Startups en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Company</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand">
+        <rdfs:comment>La clase &quot;CriminalBand&quot; se utiliza para referenciar a muchos aspectos relacionados con las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
+        <rdfs:comment>Drug, clase que engloba aspectos relacionados con la unidad de drogas de la policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
+        <rdfs:comment>DrugAddcit, clase que se refiere a aspectos o individuos relacionados con la adición a las drogas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking"/>
+        <rdfs:comment>DrugDealer, clase que recoge aspectos o individuos relacionados con el que trafica con drogas (el camello)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugTrafficking">
+        <rdfs:comment>DrugTrafficking, clase que engloba aspectos relacionados con el narcotráfico</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs">
+        <rdfs:comment>La clase &quot;Drugs&quot; se utiliza para referenciar a muchos aspectos relacionados con las drogas en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Drug</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
+        <rdfs:comment>EconomicCrimes, clase que engloba aspectos relacionados con la unidad de delitos económicos de la policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
+        <rdfs:comment>Employees, clase que engloba aspectos relacionados con los empleados de la compañía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
+        <rdfs:comment>Investigation, clase que engloba aspectos relacionados con la investigación de un asesinato</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
+        <rdfs:comment>Investors, clase que engloba aspectos relacionados con los inversores de la StartUp</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>Marijuana, clase que engloba aspectos relaccionados con la droga marihuana</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#CriminalBand"/>
+        <rdfs:comment>La clase &quot;Members&quot; se utiliza para referenciar a muchos aspectos relacionados con los miembros de las bandas criminales que aparecen en la serie &quot;Dinero Facil&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder">
+        <rdfs:comment>La clase &quot;Murder&quot; se utiliza para referenciar a muchos aspectos relacionados con los asesinatos en el contexto de la serie &quot;Dinero Facil&quot;.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Murder</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murdered">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
+        <rdfs:comment>Murdered, clase que engloba aspectos relacionados con el asesinado</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
+        <rdfs:comment>Murders, clase que engloba aspectos relacionados con la unidad de asesinatos de la policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit"/>
+        <rdfs:comment>Other, clase que engloba otros tipos de unidades de policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drugs"/>
+        <rdfs:comment>OtherDrugs, clase que engloba aspectos relacionados con otros tipos de drogas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police">
+        <rdfs:comment>Police, clase que engloba diversos aspectos de la Policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Company"/>
+        <rdfs:comment>President, clase que engloba aspectos relacionados con el presidente de la compañía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murder"/>
+        <rdfs:comment>Reason, clase que engloba aspectos relacionados con la razón del asesinato</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp">
+        <rdfs:comment>StartUp, clase que engloba aspetos relacionados con las StartUps</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
+        <rdfs:comment>Unit, clase que engloba diversos aspectos de las unidades de policía</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
+        <rdfs:comment>Alcohol</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Dani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Dani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Alcohol"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco"/>
+        <hasMoneyToDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#StartUp"/>
+        <hasInvestors rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marcus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
+        <hasMoneyToStartUp rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Leya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
+        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Police"/>
+        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Envy"/>
+        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Ravy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Ravy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1"/>
+        <hasDrugs rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1"/>
+        <hasMurdered rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim"/>
+        <hasVictims rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasVictims>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reckoning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Reason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Salim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugAddict"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+        <hasAddiction rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2"/>
+        <hasVictims rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasVictims>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#DrugDealer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+        <hasReasons rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Debth"/>
+        <hasCriminalRecords rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasCriminalRecords>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
+        <rdfs:comment>Tipo de anfetamina numero1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoAmphetamine2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
+        <rdfs:comment>Tipo de anfetamina numero2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
+        <rdfs:comment>Tipo de cocaina numero1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoCocaine2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
+        <rdfs:comment>Tipo de cocaina numero2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
+        <rdfs:comment>Tipo de marijuana numero1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#TipoMarijuana2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
+        <rdfs:comment>Tipo de marijuana numero2</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tobacco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
+        <rdfs:comment>Tabaco</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Tomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42DrugCrimes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42DrugCrimes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"/>
+        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de drogas</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42EconomicCrimes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42EconomicCrimes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"/>
+        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de delitos economicos</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42MurderCrimes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42MurderCrimes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"/>
+        <rdfs:comment>Unidad42 de la policia que se dedica a asuntos de asesinatos</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42SexistCrimes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Unit42SexistCrimes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"/>
+        <rdfs:comment>Unidad42 de la policia que se dedica a delitos sexuales</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Viktoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Viktoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Activity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Employees"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Amphetamine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Cocaine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Marijuana"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#OtherDrugs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Drug"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#EconomicCrimes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Murders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Other"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasCriminalRecords"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investigation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Members"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasVictims"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Assassin"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#President"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#hasMoney"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/pablo/ontologies/2022/3/snabbacash#Investors"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
